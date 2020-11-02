@@ -28,17 +28,17 @@ module vadd (
     );
     (*LOC = "DSP48E2_X0Y0"*)
     DSP48E2 # (
-        .ACASCREG(2),
+        .ACASCREG(1),
         .ADREG(0),
         .ALUMODEREG(0),
         .AMULTSEL("A"),
-        .AREG(2),
+        .AREG(1),
         .AUTORESET_PATDET("NO_RESET"),
         .AUTORESET_PRIORITY("RESET"),
         .A_INPUT("DIRECT"),
-        .BCASCREG(2),
+        .BCASCREG(1),
         .BMULTSEL("B"),
-        .BREG(2),
+        .BREG(1),
         .B_INPUT("DIRECT"),
         .CARRYINREG(0),
         .CARRYINSELREG(0),
