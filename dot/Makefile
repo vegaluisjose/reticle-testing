@@ -11,7 +11,7 @@ DCP_FILE = $(OUT_DIR)/$(NAME).dcp
 NETLIST_FILE = $(OUT_DIR)/$(NAME)_netlist.v
 XDC_FILE = $(abspath .)/tcl/constraint.xdc
 
-default: impl
+default: sim
 
 .PHONY: impl
 impl: | $(OUT_DIR)
