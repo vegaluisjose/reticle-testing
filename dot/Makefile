@@ -1,7 +1,7 @@
 OUT_DIR = $(abspath .)/out
 V_DIR = $(abspath .)/v
 
-NAME = dsp_1
+NAME = dot
 
 IMPL_FILE = $(V_DIR)/$(NAME).v
 
