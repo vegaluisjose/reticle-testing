@@ -24,9 +24,18 @@ module test();
             cycles <= cycles + 1'b1;
     end
 
-    wire [7:0] y;
+    wire [1:0] y;
+    reg [1:0] a;
+
+    always @(posedge clock) begin
+        if (reset) begin
+            a <= 0;
+        end else begin
+            a <= y;
+        end
+    end
     
-    fsm dut (.clock(clock), .reset(reset), .en(1'b1), .y(y));
+    fsm dut (.clock(clock), .reset(reset), .i0(1'b1), .i1(1'b1), .i2(1'b1), .a(a), .y(y));
 
     always @(posedge clock) begin
         if (~reset) begin
@@ -38,4 +47,3 @@ module test();
     end
 
 endmodule
-

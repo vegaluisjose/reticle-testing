@@ -14,7 +14,7 @@ synth_design -mode "out_of_context" -flatten_hierarchy "rebuilt" -top $top_name 
 place_design -directive Default
 route_design -directive Default
 write_verilog -file $netlist_file
-report_timing -file $timing_file
-report_utilization -file $utilization_file
-report_timing_summary -file summary.txt
+#report_timing -file $timing_file
+#report_utilization -file $utilization_file
+#report_timing_summary -file summary.txt
 write_checkpoint $dcp_file
