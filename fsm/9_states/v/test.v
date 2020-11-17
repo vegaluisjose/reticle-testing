@@ -25,15 +25,6 @@ module test();
     end
 
     wire [3:0] y;
-    reg [3:0] a;
-
-    always @(posedge clock) begin
-        if (reset) begin
-            a <= 0;
-        end else begin
-            a <= y;
-        end
-    end
     
     fsm dut (
       .clock(clock),
@@ -47,7 +38,7 @@ module test();
       .i6(1'b1),
       .i7(1'b1),
       .i8(1'b1),
-      .a(a),
+      .en(1'b1),
       .y(y));
 
     always @(posedge clock) begin
