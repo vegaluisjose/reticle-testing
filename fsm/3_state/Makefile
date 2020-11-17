@@ -1,7 +1,7 @@
 OUT_DIR = $(abspath .)/out
 V_DIR = $(abspath .)/v
 
-NAME = dot
+NAME = fsm
 
 IMPL_FILE = $(V_DIR)/$(NAME).v
 
